@@ -1,0 +1,88 @@
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+
+:root {
+    --pry-ff: 'Mona-Sans', sans-serif;
+    --bg-clr: #000;
+    --pry-clr: #6E35B9;
+    --sec-clr: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: var(--bg-clr);
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: var(--pry-ff);
+    color: var(--sec-clr);
+}
+
+.container #time-display {
+    width: 8em;
+    height: 8em;
+    display: grid;
+    place-content: center;
+    border: 4px double var(--pry-clr);
+    font-size: 2.5rem;
+    font-family: var(--pry-ff);
+    color: var(--sec-clr);
+    border-radius: 50%;
+}
+
+.container .btn-box {
+    width: 100%;
+    max-width: 40em;
+    height: fit-content;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-box button {
+    width: 5em;
+    height: 2.5em;
+    font-size: 1rem;
+    font-family: var(--pry-ff);
+    background-color: var(--pry-clr);
+    color: var(--sec-clr);
+    text-transform: capitalize;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Styling for lap elements */
+.stopwatch-container div {
+    background-color: var(--bg-clr);
+    color: var(--sec-clr);
+    border: none;
+    padding: 5px;
+    margin: 5px 0;
+    font-family: var(--pry-ff);
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 400;
+}
